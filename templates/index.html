@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask POST Example</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Percobaan Flask POST</h1>
+        <form method="POST">
+            <div class="form-group">
+                <label for="user_input">Masukkan Kata:</label>
+                <input type="text" id="user_input" name="user_input" placeholder="Type here...">
+            </div>
+            <button type="submit">Selesai</button>
+        </form>
+        <div class="result">
+            <h2>Hasil:</h2>
+            <p>{{ user_input }}</p>
+        </div>
+    </div>
+</body>
+</html>
